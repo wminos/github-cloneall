@@ -5,6 +5,7 @@ from git import Repo
 import os
 import sys
 
+
 g = None # github api object
 
 # read accesstoken if exists
@@ -57,4 +58,3 @@ for repo in sorted_repos:
     else:
         print("not found folder, so let's clone")
         Repo.clone_from(https_url, target_dir)
-
